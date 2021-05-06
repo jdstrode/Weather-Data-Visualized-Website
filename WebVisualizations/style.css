@@ -17,7 +17,61 @@ header {
   background: #eee;
 }
 
-h1 {
+
+  /*---------------------
+/* ---dont know what this does*/
+  /* Nav Bar Styling All Pages  */
+  .navbar.navbar-expand-lg{
+    margin-right:25px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.navbar-brand{
+  background-color:teal;
+  padding:10px;
+}
+
+/* ---dont know what this does*/
+
+
+.navbar-brand a:hover{
+  color:#f7f9fb;
+}
+
+
+
+/* 
+.nav-item a:hover{
+  background: #687868;
+  color:#f7f9fb;
+}
+
+/* 
+.dropdown-item {
+  color:#31708E;
+}
+.dropdown-menu a:hover{
+ background: #687864;
+ color:#f7f9fb;
+}
+
+.navbar-toggler{
+  background:#687864;
+  border-color:#f7f9fb
+}
+
+.navbar-toggler-icon {
+  stroke:#f7f9fb stroke-width='2' stroke-linecap='round' stroke-miterlimit='10';
+} */
+
+
+
+/* -----------------------
+
+
+
+/* h1 {
   padding: 20px 20px 20px 20px;
   margin: 0;
   margin-bottom: 20px;
@@ -25,13 +79,14 @@ h1 {
   color: #eee;
   background: teal;
   text-align: left;
-}
- h2 {
+} */
+
+ /* h2 {
   font-size: 30px;
   padding: 20px 20px 20px 20px;
   text-align: left;
   color: teal;
-} 
+}  */
 
 /* a {
   color: black;
@@ -48,13 +103,13 @@ h1 {
 }
 
 
-#figure {
+/* #figure {
   float: center;
   
-}
+} */
 
-.words {
+/* .words {
   padding: 20px, 20px, 20px, 20px;
   margin: 20px, 20px, 20px, 20px;
 
-}
+} */
