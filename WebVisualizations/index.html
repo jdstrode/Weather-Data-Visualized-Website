@@ -5,41 +5,92 @@
 <head>
   <meta charset="UTF-8">
   <title>Latitude</title>
-  <header>
+  <!-- <header>
     <h1>Latitude</h1>
-  </header>
-  <!-- This line is money! It points your HTML to the CSS file. -->
-  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  </header> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Latitude</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Plots
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Max Temperature</a></li>
+                    <li><a class="dropdown-item" href="#">Humidity</a></li>
+                    <li><a class="dropdown-item" href="#">Cloudiness</a></li>
+                    <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Data</a>
+                </li>
+              </ul>
+          
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 
   <main class="container">
-    <!-- <section id="main-bio">
-      <section id="figure"> -->
-        <h2>Max Temperature</h2>
+
+    <div class="row">
+      <div class="col-md-8">
+          <h2>Max Temperature
+        </h2>
         <figure id="figure">
-            <img id="City Latitude vs Max Temperature" src="Resources/assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
+          <img id="City Latitude vs Max Temperature" src="Resources/assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
         </figure>
-         <p class="words">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum risus ut justo laoreet consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dui neque, malesuada egestas aliquet ac, commodo in magna. Etiam mollis odio at mi maximus hendrerit. Integer aliquam id lectus nec hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris rhoncus eget nulla in ornare. Maecenas massa nibh, commodo non condimentum eu, congue tempus neque. Donec neque mi, ullamcorper eget fringilla et, iaculis vitae tortor. Curabitur vel nunc vel mi lobortis ornare ut non nulla. Etiam ornare libero ac suscipit aliquam. Nunc venenatis felis sit amet velit vehicula interdum. Vivamus iaculis condimentum nulla vitae dapibus.
+        <p>
+          Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3>
+          Visualizations
+        </h3>
+          <hr>
+          <a href="https://jdstrode.github.io/fig1">
+            <img src="../WebVisualizations/Resources/assets/images/Fig1.png" class="img-fluid float-left" alt="Max Temp" style="width:50%">
+          </a>
+          <a href="https://jdstrode.github.io/fig2">
+            <img src="../WebVisualizations/Resources/assets/images/Fig2.png" class="img-fluid float-right" alt="Humidity" style="width:50%">
+          </a>
+          <a href="https://jdstrode.github.io/fig3">
+            <img src="../WebVisualizations/Resources/assets/images/Fig3.png" class="img-fluid float-left" alt="Cloudiness" style="width:50%">
+          </a>
+          <a href="https://jdstrode.github.io/fig4">
+            <img src="../WebVisualizations/Resources/assets/images/Fig4.png" class="img-fluid float-right" alt="Wind Speed" style="width:50%">
+          </a>
+        </hr>
+      </div>
+    </div>
 
-         </p>
 
-
-
-
-    <!-- <aside id="contact-info">
-      <h2>Contact Info</h2> -->
-      <!-- <ul>
-        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-      </ul> -->
-    <!-- </aside> -->
   </main>
 
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
