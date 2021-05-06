@@ -5,9 +5,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Latitude</title>
-  <!-- <header>
-    <h1>Latitude</h1>
-  </header> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,9 +13,8 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Latitude</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">         
+            <a class="navbar-brand" href="https://jdstrode.github.io/index">Latitude</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,45 +25,39 @@
                     Plots
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Max Temperature</a></li>
-                    <li><a class="dropdown-item" href="#">Humidity</a></li>
-                    <li><a class="dropdown-item" href="#">Cloudiness</a></li>
-                    <li><a class="dropdown-item" href="#">Wind Speed</a></li>
+                    <li><a class="dropdown-item" href="https://jdstrode.github.io/max_temp">Max Temperature</a></li>
+                    <li><a class="dropdown-item" href="https://jdstrode.github.io/humidity">Humidity</a></li>
+                    <li><a class="dropdown-item" href="https://jdstrode.github.io/cloudiness">Cloudiness</a></li>
+                    <li><a class="dropdown-item" href="https://jdstrode.github.io/wind_speed">Wind Speed</a></li>
                     <li><hr class="dropdown-divider"></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Comparison</a>
+                  <a class="nav-link active" aria-current="page" href="https://jdstrode.github.io/comparison">Comparison</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Data</a>
+                  <a class="nav-link active" aria-current="page" href="https://jdstrode.github.io/data">Data</a>
                 </li>
               </ul>
-          
             </div>
-          </div>
         </nav>
       </div>
     </div>
   </div>
 
-  <main class="container">
-
+  <section class="container-fluid d-flex justify-content-between">
     <div class="row">
-      <div class="col-md-8">
-          <h2>Max Temperature
-        </h2>
-        <figure id="figure">
+      <div class="col-md-7">
+        <h2>Max Temperature</h2>
+        
           <img id="City Latitude vs Max Temperature" src="Resources/assets/images/Fig1.png" alt="City Latitude vs Max Temperature">
         </figure>
         <p>
-          Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui. Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.
         </p>
       </div>
-      <div class="col-md-4">
-        <h3>
-          Visualizations
-        </h3>
+      <div class="col-md-5">
+        <h2>Visualizations</h2>
           <hr>
           <a href="https://jdstrode.github.io/max_temp">
             <img src="../WebVisualizations/Resources/assets/images/Fig1.png" class="img-fluid float-left" alt="Max Temp" style="width:50%">
@@ -84,10 +74,13 @@
         </hr>
       </div>
     </div>
-
-
+  </section>
   </main>
 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
