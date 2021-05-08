@@ -19,7 +19,7 @@ body {
 
 /*---------------------
 
-/* ---dont know what this does*/
+
   /* Nav Bar Styling All Pages  */
   .navbar.navbar-expand-lg{
     margin-right:0px;
@@ -39,10 +39,12 @@ body {
   color:#f7f9fb;
 }
 
-
+p {
+  background: white;
+}
 
 .nav-item a:hover{
-  background: #687868;
+  background:teal;
   color:#f7f9fb;
 }
 
@@ -101,8 +103,29 @@ h2 {
   
 } */
 
+.whitebox {
+  background: white;
+  margin: 10px 30px 10px 30px;
+}
+
+
 /* Selecting elements by class */
 .col-md-6 {
+  margin: 0 0 0 auto;
+  background: white;
+}
+
+.col-md-10 {
+  margin: 0 auto;
+  background: white;
+}
+
+/* .col-md-12 {
+  margin: 0 0 0 0;
+  background: white;
+} */
+
+.col-md-5 {
   margin: 0 auto;
   background: white;
 }
@@ -112,8 +135,12 @@ h2 {
   background: white;
 } */
 
+table {
+  background: white;
+}
+
 .col-md-4 {
-  margin: 20 auto;
+  margin: 0 auto 0 20px;
   background: white;
 }
 
