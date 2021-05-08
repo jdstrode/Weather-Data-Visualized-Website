@@ -1,5 +1,19 @@
 # Web Design Homework - Web Visualization Dashboard (Latitude)
 
+## Developer/Student Commentary:
+
+* Here is the link for the [Home Page](#https://jdstrode.github.io/Web-Design-Challenge/WebVisualizations/index) of the website we were to create and deploy as part of this assignment. 
+
+* This assignment shows student/developer competancy in the following skills:
+
+1. HTML
+2. CSS
+3. Bootstrap
+4. Creating an HTML table utilizing Python/Pandas
+
+
+## --BELOW OUTLINED IS THE FULL ASSIGNMENT--
+
 ## Background
 
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
