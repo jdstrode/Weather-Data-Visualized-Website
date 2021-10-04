@@ -1,153 +1,131 @@
-# Web Design Homework - Web Visualization Dashboard (Latitude)
-
-## Developer/Student Commentary:
-
-* Here is the link for the ![Home Page](#https://jdstrode.github.io/Web-Design-Challenge/WebVisualizations/index) of the website we were to create and deploy as part of this assignment. 
-
-* This assignment shows student/developer competancy in the following skills:
-
-1. HTML
-2. CSS
-3. Bootstrap
-4. Creating an HTML table utilizing Python/Pandas
-
-
-## --BELOW OUTLINED IS THE FULL ASSIGNMENT--
-
-## Background
-
-Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis we've done.
-
-![WebVisualizations/Images/landingResize.png](WebVisualizations/Images/landingResize.png)
-
-### Before You Begin
-
-1. Create a new repository for this project called `Web-Design-Challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the web challenge. Use a folder name to correspond to the challenge: **WebVisualizations**.
-
-4. Add your **html** files to this folder as well as your **assets**, **Resources** and **visualizations** folders.
-
-5. Push the above changes to GitHub or GitLab.
-
-6. Deploy to GitHub pages. 
-
-## Latitude - Latitude Analysis Dashboard with Attitude
-
-For this homework we'll be creating a visualization dashboard website using visualizations we've created in a past assignment. Specifically, we'll be plotting [weather data](WebVisualizations/Resources/cities.csv).
-
-In building this dashboard, we'll create individual pages for each plot and a means by which we can navigate between them. These pages will contain the visualizations and their corresponding explanations. We'll also have a landing page, a page where we can see a comparison of all of the plots, and another page where we can view the data used to build them.
-
-### Website Requirements
-
-For reference, see the ["Screenshots" section](#screenshots) below.
-
-The website must consist of 7 pages total, including:
-
-* A [landing page](#landing-page) containing:
-  * An explanation of the project.
-  * Links to each visualizations page. There should be a sidebar containing preview images of each plot, and clicking an image should take the user to that visualization.
-* Four [visualization pages](#visualization-pages), each with:
-  * A descriptive title and heading tag.
-  * The plot/visualization itself for the selected comparison.
-  * A paragraph describing the plot and its significance.
-* A ["Comparisons" page](#comparisons-page) that:
-  * Contains all of the visualizations on the same page so we can easily visually compare them.
-  * Uses a Bootstrap grid for the visualizations.
-    * The grid must be two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
-* A ["Data" page](#data-page) that:
-  * Displays a responsive table containing the data used in the visualizations.
-    * The table must be a bootstrap table component. [Hint](https://getbootstrap.com/docs/4.3/content/tables/#responsive-tables)
-    * The data must come from exporting the `.csv` file as HTML, or converting it to HTML. Try using a tool you already know, pandas. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. See the documentation [here](https://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.DataFrame.to_html.html)
-
-The website must, at the top of every page, have a navigation menu that:
-
-* Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
-* Contains a dropdown menu on the right of the navbar named "Plots" that provides a link to each individual visualization page.
-* Provides two more text links on the right: "Comparisons," which links to the comparisons page, and "Data," which links to the data page.
-* Is responsive (using media queries). The nav must have similar behavior as the screenshots ["Navigation Menu" section](#navigation-menu) (notice the background color change).
-
-Finally, the website must be deployed to GitHub pages.
-
-When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository.
-
-Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-### Considerations
-
-* You may use the [weather data](WebVisualizations/Resources/cities.csv) or choose another dataset. Alternatively, you may use the included [cities dataset](WebVisualizations/Resources/cities.csv) and pull the images from the [assets folder](WebVisualizations/Resources/assets).
-* You must use Bootstrap. This includes using the Bootstrap `navbar` component for the header on every page, the bootstrap table component for the data page, and the Bootstrap grid for responsiveness on the comparison page.
-* You must deploy your website to GitHub pages, with the website working on a live, publicly accessible URL as a result.
-* Be sure to use a CSS media query for the navigation menu.
-* Be sure your website works at all window widths/sizes.
-* Feel free to take some liberty in the visual aspects, but keep the core functionality the same.
-
-### Bonuses
-
-* Use a different dataset! The requirements above still hold, but make it your own.
-* Use a Bootstrap theme to customize your website. You may use a tool like [Bootswatch](https://bootswatch.com/). Make it look snazzy, give it some attitude. If using this, be sure you also meet all of the requirements listed above.
-* Add extra visualizations! The more comparisons the better, right?
-* Use meaningful glyphicons next to links in the header.
-* Have visualization navigation on every visualizations page with an active state. See the screenshots below.
-
-### Screenshots
-
-This section contains screenshots of each page that must be built, at varying screen widths. These are a guide; you can meet the requirements without having the pages look exactly like the below images.
-
-#### <a id="landing-page"></a>Landing page
-
-Large screen:
-
-![Landing page large screen](WebVisualizations/Images/landingResize.png)
-
-Small screen:
-
-![Landing page small screen](WebVisualizations/Images/landing-sm.png)
-￼
-
-#### <a id="comparisons-page"></a>Comparisons page
-
-Large screen:
-
-![comparison page large screen](WebVisualizations/Images/comparison-lg.png)
-
-Small screen:
-
-![comparison page small screen](WebVisualizations/Images/comparison-sm.png)
-
-#### <a id="data-page"></a>Data page
-
-Large screen:
-
-![data page large screen](WebVisualizations/Images/data-lg.png)
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+<!-- [![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
-Small screen:
 
-![data page small screen](WebVisualizations/Images/data-sm.png)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+    <img src="WebVisualizations/Images/weatherlogo.jpg" alt="Logo" width="80" height="80">
+  </a>
 
-#### <a id="visualization-pages"></a>Visualization pages
+  <h3 align="center">Weather Data Visualized Website</h3>
 
-You'll build four of these, one for each visualization. Here's an example of one:
+  <p align="center">
+    A website to display the Web Data Analysis and Visualizations generated from a prior project.
+    <br />
+    <br />
+</p>
 
-Large screen:
 
-![visualize page large screen](WebVisualizations/Images/visualize-lg.png)
 
-Small screen:
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
+    <!-- <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li> -->
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-![visualize page small screen](WebVisualizations/Images/visualize-sm.png)
 
-#### <a id="navigation-menu"></a>Navigation menu
 
-Large screen:
-![nav menu large screen](WebVisualizations/Images/nav-lg.png)
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Small screen:
-![nav menu small screen](WebVisualizations/Images/nav-sm.png)
+The purpose of this project is to showcase my ability to create a website from scratch.  The content of this website is from a [weather analysis project](https://github.com/jdstrode/Visualizing-OpenWeather.com-API-Data) I completed previously.  The weather data was collected from [Openweather's API](https://home.openweathermap.org/users/sign_in) and the analysis was completed using Python, Pandas, and Matplotlib. 
 
-### Copyright
+![WebVisualizations/Images/landingResize.png](WebVisualizations/Images/landingpage.png)
 
-Trilogy Education Services © 2019. All Rights Reserved.
+
+### Built With
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+* [Python](https://docs.python.org/3/)
+* [Pandas](https://pandas.pydata.org/pandas-docs/stable/index.html)
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+The full webpage is deployed here: [Home Page](https://jdstrode.github.io/Web-Design-Challenge/WebVisualizations/index)
+
+
+<!-- CONTRIBUTING
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+ -->
+
+
+<!-- LICENSE
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information. -->
+
+
+
+<!-- CONTACT -->
+## Contact
+
+J.D. Strode - [@Linkedin_Profile](https://www.linkedin.com/in/j-d-strode-1609867/) 
+
+Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+* [Northwestern University Data Science Bootcamp](https://bootcamp.northwestern.edu/data/landing/?s=Google-Brand&msg_cv_scta=4&msg_cv_stbn=1&msg_cv_fcta=1&pkw=northwestern%20data%20science%20bootcamp&pcrid=458379133811&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CNORTHWESTERN-UNIVERSITY%7CSEM%7CDATA%7C-%7COFL%7CTIER-1%7CALL%7CBRD%7CEXACT%7CCore%7CBootcamp&utm_term=northwestern%20data%20science%20bootcamp&s=google&k=northwestern%20data%20science%20bootcamp&utm_adgroupid=111164391830&utm_locationphysicalms=9021727&utm_matchtype=e&utm_network=g&utm_device=c&utm_content=458379133811&utm_placement=&gclid=CjwKCAjwzOqKBhAWEiwArQGwaPurKoj_Za8qBnj8iMwyUWXmOX6drbxgX_qyvbwhSus9g0WIM4mZbxoCC6AQAvD_BwE&gclsrc=aw.ds)
+
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
+[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
+[forks-url]: https://github.com/github_username/repo_name/network/members
+[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
+[stars-url]: https://github.com/github_username/repo_name/stargazers
+[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/repo_name/issues
+[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
+[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555 -->
+<!-- [linkedin-url]: https://linkedin.com/in/github_username -->
