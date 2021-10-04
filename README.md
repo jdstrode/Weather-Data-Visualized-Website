@@ -2,7 +2,7 @@
 
 ## Developer/Student Commentary:
 
-* Here is the link for the [Home Page](#https://jdstrode.github.io/Web-Design-Challenge/WebVisualizations/index) of the website we were to create and deploy as part of this assignment. 
+* Here is the link for the ![Home Page](#https://jdstrode.github.io/Web-Design-Challenge/WebVisualizations/index) of the website we were to create and deploy as part of this assignment. 
 
 * This assignment shows student/developer competancy in the following skills:
 
